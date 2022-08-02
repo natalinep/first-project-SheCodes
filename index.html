@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Reasons To Give Blood</title>
+    <style>
+      body {
+        background-color: #ffdcd3;
+      }
+
+      h1,
+      h2,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      h2 {
+        color: white;
+        font-size: 92px;
+        font-weight: 900;
+      }
+
+      p {
+        text-transform: uppercase;
+        font-size: 38px;
+        color: #4f4c4b;
+        font-weight: 200;
+        font-family: monospace;
+      }
+
+      h1 {
+        color: #d5310e;
+        font-weight: 900;
+        font-size: 92px;
+        text-transform: uppercase;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 25px 0;
+        background: url(https://www.svgrepo.com/show/163600/blood.svg) left
+          no-repeat;
+        padding-left: 100px;
+        text-align: left;
+        color: #4f4c4b;
+        font-family: monospace;
+      }
+
+      button {
+        margin: 30px auto;
+        padding: 20px 40px;
+        color: white;
+        background: #ffbb83;
+        text-transform: uppercase;
+        border: #ffbb83 solid 1px;
+        border-radius: 10px;
+        font-size: 24px;
+        transition: all 200ms ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 10px;
+      }
+
+      button:hover {
+        background: white;
+        color: #4f4c4b;
+        border: #4f4c4b 1px solid;
+        cursor: pointer;
+      }
+
+      h4 {
+        margin: 0 0 38px 0;
+        font-size: 38px;
+        color: #4f4c4b;
+      }
+
+      em {
+        font-size: 60px;
+      }
+
+      strong {
+        font-size: 80px;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 80px;
+      }
+
+      img {
+        display: block;
+        min-width: 100%;
+      }
+
+      span {
+        display: block;
+        text-align: center;
+        font-weight: 600;
+        margin: 10px;
+        color: #4f4c4b;
+        text-decoration: none;
+        font-family: monospace;
+      }
+
+      a {
+        text-decoration: none;
+        color: #d5310e;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        text-align: center;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .list {
+        display: flex;
+        justify-content: center;
+      }
+
+      .bottom {
+        margin: 0 -8px;
+        display: flex;
+        background: linear-gradient(
+          128deg,
+          rgba(135, 1, 0, 1) 7%,
+          rgba(184, 1, 0, 1) 40%
+        );
+        min-height: 480px;
+      }
+
+      .bottom__content {
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        flex: 50%;
+        color: white;
+      }
+
+      .link {
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+      }
+
+      .link:hover {
+        color: #ffdcd3;
+        text-decoration: underline;
+      }
+
+      .bottom__img {
+        width: 50%;
+        height: 490px;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>5</h2>
+      <p>Reasons to give</p>
+      <h1>blood</h1>
+      <hr />
+      <div class="list">
+        <ul>
+          <li>
+            1/3 of us will need a blood <br />
+            transfusion in our lifetime.
+          </li>
+          <li>
+            3 lives can be saved with the amount <br />
+            of blood donated in one sitting.
+          </li>
+          <li>
+            Every 2 seconds someone in India <br />
+            needs blood.
+          </li>
+          <li>
+            62 countries get sufficient blood <br />
+            supplies from voluntary donations.
+          </li>
+          <li>
+            36 hours. The time it takes to naturally <br />
+            replace blood lost from the body.
+          </li>
+        </ul>
+      </div>
+      <button>Save a life and donate</button>
+      <h4></h4>
+    </div>
+    <div class="bottom">
+      <div class="bottom__content">
+        <em>June 14</em>
+        <strong
+          >World <br />
+          Blood Donor Day</strong
+        >
+        <a
+          class="link"
+          href="https://en.wikipedia.org/wiki/World_Blood_Donor_Day"
+          target="_blank"
+          >Read more</a
+        >
+      </div>
+      <div class="bottom__img">
+        <img
+          src="https://www.thomsonmedical.com/wp-content/uploads/2017/06/iStock-690302872.jpg"
+          alt="Donation"
+        />
+      </div>
+    </div>
+    <span>
+      This page was built by
+      <a href="https://www.instagram.com/n._.natali/" target="_blank"
+        >Nataliia</a
+      >
+      🤍
+    </span>
+    <script>
+      function show() {
+        document.querySelector("h4").innerHTML = " ";
+
+        function donate() {
+          let name = prompt("What is your name?");
+
+          function agee() {
+            let age = prompt("How old are you?");
+            let header = document.querySelector("h4");
+
+            if (age.length > 0) {
+              if (age >= 18) {
+                header.innerHTML = "Thank you " + name + " for your support!❤";
+              } else {
+                alert(
+                  `😢Sorry ${name}, but you are so young. Сome back when you will be over 18😊`
+                );
+              }
+            } else {
+              alert(`Write your age, please😊`);
+              agee();
+            }
+          }
+
+          if (name.length > 0) {
+            agee();
+          } else {
+            alert(`Write your name, please😊`);
+            donate();
+          }
+        }
+        setTimeout(donate, 1);
+      }
+
+      let donateButton = document.querySelector("button");
+      donateButton.addEventListener("click", show);
+    </script>
+  </body>
+</html>
